@@ -41,19 +41,26 @@ a:hover {
 }
 
 .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-    text-transform: uppercase;
+  display: block;
+  margin-right: auto;
+  color: white;
+  text-transform: uppercase;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
   transition: all .5s;
+  padding-bottom: 3px;
 }
 .nav a:hover {
-  color: white
+  color: white;
+  border-bottom: 1px solid #fff;
+}
+
+.nav a.selected {
+  color: white;
+  border-bottom: 1px solid #fff;
 }
 
 header {
@@ -172,6 +179,35 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+/* Contact Us Page */
+
+#contact-me .flex .card:first-child {
+  padding: 5px;
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+#contact-me .flex .card img {
+  max-width: 100%;
+}
+
+.contact-us-links li {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+}
+
+.contact-us-links a {
+  font-weight: normal;
+}
+
+.contact-us-links a:hover {
+  color: #999;
+  text-decoration: underline;
 }
 
 /* Styles for larger screens */

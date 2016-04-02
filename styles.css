@@ -8,9 +8,22 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #222;
+  color: #7b8b8e;
   background: #f7f5f0;
 }
+
+p {
+  color: #7b8b8e;
+}
+
+h3 {
+  color: #384047;
+}
+
+h4 {
+  color: #505050;
+}
+
 /* Link Styles */
 
 a {
@@ -86,7 +99,7 @@ header .profile-image:hover {
 }
 .tag {
   background-color: #efefef;
-  color: black;
+  color: #222;
   padding: 10px;
   border-radius: 5px;
   display: table;
@@ -97,7 +110,7 @@ header .profile-image:hover {
   color: yellow;
 }
 .card {
-  margin: 30px;
+  margin: 30px auto;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -111,9 +124,10 @@ header .profile-image:hover {
 }
 
 .card h2 {
+  color: #222;
   text-transform: uppercase;
   padding: 0 0 5px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #222;
 }
 
 ul.skills {
@@ -183,6 +197,10 @@ a.social:hover {
 
 /* Contact Us Page */
 
+#contact-me .card:hover {
+  border-color: #317daf;
+}
+
 #contact-me .flex .card:first-child {
   padding: 5px;
   background: none;
@@ -197,6 +215,7 @@ a.social:hover {
 .contact-us-links li {
   margin: 0 0 10px 0;
   padding: 0;
+  color: #222;
   list-style: none;
   font-weight: 500;
 }
@@ -210,8 +229,67 @@ a.social:hover {
   text-decoration: underline;
 }
 
+
+
+/* Experience Page */
+
+.experience-img {
+  max-width: 100%;
+  border: 2px solid #999;
+}
+
+#experience .card header {
+  background: none;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#experience .card:first-child h2 {
+  border-bottom: none;
+  margin-bottom: 5px;
+}
+
+#experience h2{
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+#experience h3,
+#experience h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#experience .card ul {
+  margin: 15px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#experience .card li span {
+  display: block;
+  text-transform: uppercase;
+  min-width: 180px;
+  color: #505050;
+}
+
+#experience .card li {
+  margin-bottom:  20px;
+}
+
+#experience .duration {
+  color: #999;
+  font-size: 14px;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
+
+  .card {
+    margin: 30px;
+  }
 
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -244,6 +322,15 @@ a.social:hover {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+  }
+
+  /* Experience Page */
+  #experience .card {
+    max-width: 600px;
+  }
+
+  #experience .card:first-child {
+    max-width: 400px;
   }
 
 }
